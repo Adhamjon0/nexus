@@ -1,0 +1,421 @@
+.tutor-page {
+    min-height: 100vh;
+}
+
+.tutor-hero {
+    padding: 60px 0 35px;
+    border-bottom: 1px solid var(--border);
+}
+
+.tutor-heading {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.tutor-heading-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    flex-shrink: 0;
+    color: var(--gold);
+    background: rgba(212, 175, 55, 0.08);
+    border: 1px solid rgba(212, 175, 55, 0.14);
+    border-radius: 15px;
+}
+
+.tutor-heading .section-label {
+    margin-bottom: 7px;
+}
+
+.tutor-heading h1 {
+    color: var(--text-primary);
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 750;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+}
+
+.tutor-heading p {
+    margin-top: 8px;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.tutor-content {
+    padding: 40px 0 90px;
+}
+
+.tutor-layout {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 18px;
+    align-items: start;
+}
+
+.tutor-profile {
+    padding: 24px;
+}
+
+.tutor-profile-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.tutor-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 76px;
+    height: 76px;
+    color: var(--gold);
+    background:
+        linear-gradient(135deg,
+            rgba(212, 175, 55, 0.13),
+            rgba(212, 175, 55, 0.035));
+    border: 1px solid rgba(212, 175, 55, 0.16);
+    border-radius: 21px;
+}
+
+.tutor-status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 9px;
+    color: var(--success);
+    background: rgba(74, 222, 128, 0.06);
+    border: 1px solid rgba(74, 222, 128, 0.1);
+    border-radius: 8px;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.tutor-status span {
+    width: 5px;
+    height: 5px;
+    background: var(--success);
+    border-radius: 50%;
+}
+
+.tutor-profile-info {
+    margin-top: 25px;
+}
+
+.tutor-label {
+    color: var(--text-muted);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.tutor-profile-info h2 {
+    margin-top: 5px;
+    color: var(--text-primary);
+    font-size: 23px;
+    font-weight: 650;
+}
+
+.tutor-profile-info p {
+    margin-top: 6px;
+    color: var(--text-secondary);
+    font-size: 12px;
+}
+
+.tutor-divider {
+    height: 1px;
+    margin: 24px 0;
+    background: var(--border);
+}
+
+.tutor-contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.tutor-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.tutor-contact-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    color: var(--gold);
+    background: rgba(212, 175, 55, 0.06);
+    border-radius: 10px;
+}
+
+.tutor-contact-item div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.tutor-contact-item span {
+    color: var(--text-muted);
+    font-size: 9px;
+}
+
+.tutor-contact-item strong {
+    color: var(--text-secondary);
+    font-size: 11px;
+    font-weight: 500;
+    word-break: break-word;
+}
+
+.tutor-main {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.tutor-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.tutor-stat {
+    position: relative;
+    min-height: 140px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.tutor-stat::after {
+    content: "";
+    position: absolute;
+    right: -35px;
+    bottom: -45px;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle,
+            rgba(212, 175, 55, 0.07),
+            transparent 70%);
+    pointer-events: none;
+}
+
+.tutor-stat-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    color: var(--gold);
+    background: rgba(212, 175, 55, 0.07);
+    border-radius: 11px;
+}
+
+.tutor-stat span {
+    display: block;
+    margin-top: 17px;
+    color: var(--text-muted);
+    font-size: 10px;
+}
+
+.tutor-stat strong {
+    display: block;
+    margin-top: 4px;
+    color: var(--text-primary);
+    font-size: 22px;
+    font-weight: 650;
+}
+
+.tutor-info-card {
+    padding: 24px;
+}
+
+.tutor-info-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.tutor-info-header .section-label {
+    margin-bottom: 5px;
+}
+
+.tutor-info-header h3 {
+    color: var(--text-primary);
+    font-size: 20px;
+    font-weight: 650;
+}
+
+.tutor-info-badge {
+    padding: 7px 10px;
+    color: var(--gold);
+    background: rgba(212, 175, 55, 0.06);
+    border: 1px solid rgba(212, 175, 55, 0.12);
+    border-radius: 9px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.tutor-description {
+    max-width: 720px;
+    margin-top: 18px;
+    color: var(--text-secondary);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.tutor-department {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 22px;
+    padding-top: 17px;
+    border-top: 1px solid var(--border);
+}
+
+.tutor-department span {
+    color: var(--text-muted);
+    font-size: 9px;
+}
+
+.tutor-department strong {
+    color: var(--text-secondary);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.tutor-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.tutor-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 48px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    transition:
+        transform var(--transition),
+        background var(--transition),
+        border-color var(--transition),
+        color var(--transition);
+}
+
+.tutor-action:hover {
+    transform: translateY(-2px);
+}
+
+.tutor-action.primary {
+    color: #080808;
+    background: var(--gold);
+}
+
+.tutor-action.primary:hover {
+    background: var(--gold-light);
+}
+
+.tutor-action.secondary {
+    color: var(--text-primary);
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+}
+
+.tutor-action.secondary:hover {
+    color: var(--gold);
+    border-color: var(--border-gold);
+}
+
+.tutor-privacy {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 13px 15px;
+    color: var(--text-muted);
+    background: rgba(212, 175, 55, 0.025);
+    border: 1px solid rgba(212, 175, 55, 0.08);
+    border-radius: 11px;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.tutor-privacy svg {
+    flex-shrink: 0;
+    color: var(--gold);
+}
+
+@media (max-width: 900px) {
+    .tutor-layout {
+        grid-template-columns: 290px 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .tutor-hero {
+        padding: 40px 0 25px;
+    }
+
+    .tutor-heading {
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .tutor-heading-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .tutor-content {
+        padding: 28px 0 80px;
+    }
+
+    .tutor-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .tutor-profile {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tutor-heading h1 {
+        font-size: 32px;
+    }
+
+    .tutor-heading p {
+        font-size: 12px;
+    }
+
+    .tutor-stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .tutor-stat {
+        min-height: 125px;
+        padding: 16px;
+    }
+
+    .tutor-info-card {
+        padding: 18px;
+    }
+
+    .tutor-info-header h3 {
+        font-size: 18px;
+    }
+
+    .tutor-actions {
+        grid-template-columns: 1fr;
+    }
+}

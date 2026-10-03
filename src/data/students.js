@@ -1,0 +1,45 @@
+export const students = [
+    {
+        id: 1,
+        name: "Sodiqov Adhamjon",
+        group: "NEXUS",
+        phone: "+998 91 707 72 91",
+        position: "Guruh sardori",
+        image: null,
+    },
+    {
+        id: 2,
+        name: "Student 02",
+        group: "NEXUS",
+        phone: "+998 90 000 00 02",
+        image: null,
+    },
+    {
+        id: 3,
+        name: "Student 03",
+        group: "NEXUS",
+        phone: "+998 90 000 00 03",
+        image: null,
+    },
+    {
+        id: 4,
+        name: "Student 04",
+        group: "NEXUS",
+        phone: "+998 90 000 00 04",
+        image: null,
+    },
+    {
+        id: 5,
+        name: "Student 05",
+        group: "NEXUS",
+        phone: "+998 90 000 00 05",
+        image: null,
+    },
+    {
+        id: 6,
+        name: "Student 06",
+        group: "NEXUS",
+        phone: "+998 90 000 00 06",
+        image: null,
+    },
+];

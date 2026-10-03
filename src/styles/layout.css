@@ -1,0 +1,16 @@
+.app-layout {
+    min-height: 100vh;
+    background: var(--bg-primary);
+}
+
+.app-main {
+    min-height: calc(100vh - var(--header-height));
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .app-main {
+        min-height: calc(100vh - 68px);
+        padding-bottom: var(--mobile-nav-height);
+    }
+}

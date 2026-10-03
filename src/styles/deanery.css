@@ -1,0 +1,357 @@
+.deanery-page {
+    min-height: 100vh;
+}
+
+.deanery-hero {
+    padding: 60px 0 35px;
+    border-bottom: 1px solid var(--border);
+}
+
+.deanery-heading {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.deanery-heading-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    flex-shrink: 0;
+    color: var(--gold);
+    background: rgba(212, 175, 55, 0.08);
+    border: 1px solid rgba(212, 175, 55, 0.14);
+    border-radius: 15px;
+}
+
+.deanery-heading .section-label {
+    margin-bottom: 7px;
+}
+
+.deanery-heading h1 {
+    color: var(--text-primary);
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 750;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+}
+
+.deanery-heading p {
+    margin-top: 8px;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.deanery-content {
+    padding: 40px 0 90px;
+}
+
+.deanery-intro {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.deanery-intro h2 {
+    color: var(--text-primary);
+    font-size: 25px;
+    font-weight: 650;
+    letter-spacing: -0.025em;
+}
+
+.deanery-intro p {
+    max-width: 620px;
+    margin-top: 8px;
+    color: var(--text-secondary);
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+.deanery-working {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 175px;
+    padding: 13px 15px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.deanery-working svg {
+    color: var(--gold);
+}
+
+.deanery-working div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.deanery-working span {
+    color: var(--text-muted);
+    font-size: 9px;
+}
+
+.deanery-working strong {
+    color: var(--text-secondary);
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.deanery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.deanery-card {
+    padding: 24px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    transition:
+        background var(--transition),
+        border-color var(--transition),
+        transform var(--transition),
+        box-shadow var(--transition);
+}
+
+.deanery-card:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--border-gold);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-gold);
+}
+
+.deanery-card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.deanery-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    color: var(--gold);
+    background:
+        linear-gradient(135deg,
+            rgba(212, 175, 55, 0.13),
+            rgba(212, 175, 55, 0.035));
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    border-radius: 18px;
+}
+
+.deanery-status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 9px;
+    color: var(--success);
+    background: rgba(74, 222, 128, 0.05);
+    border: 1px solid rgba(74, 222, 128, 0.1);
+    border-radius: 8px;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.deanery-status span {
+    width: 5px;
+    height: 5px;
+    background: var(--success);
+    border-radius: 50%;
+}
+
+.deanery-person {
+    margin-top: 24px;
+}
+
+.deanery-person>span {
+    color: var(--gold);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.deanery-person h3 {
+    margin-top: 5px;
+    color: var(--text-primary);
+    font-size: 21px;
+    font-weight: 650;
+}
+
+.deanery-person p {
+    margin-top: 5px;
+    color: var(--text-secondary);
+    font-size: 11px;
+}
+
+.deanery-divider {
+    height: 1px;
+    margin: 22px 0;
+    background: var(--border);
+}
+
+.deanery-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.deanery-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+}
+
+.deanery-contact-item:last-child {
+    grid-column: 1 / -1;
+}
+
+.deanery-contact-item>svg {
+    margin-top: 1px;
+    flex-shrink: 0;
+    color: var(--gold);
+}
+
+.deanery-contact-item div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.deanery-contact-item span {
+    color: var(--text-muted);
+    font-size: 9px;
+}
+
+.deanery-contact-item strong {
+    color: var(--text-secondary);
+    font-size: 11px;
+    font-weight: 500;
+    word-break: break-word;
+}
+
+.deanery-call {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    min-height: 44px;
+    margin-top: 22px;
+    color: #080808;
+    background: var(--gold);
+    border-radius: 11px;
+    font-size: 11px;
+    font-weight: 650;
+    transition:
+        background var(--transition),
+        transform var(--transition);
+}
+
+.deanery-call:hover {
+    background: var(--gold-light);
+    transform: translateY(-2px);
+}
+
+.deanery-note {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-top: 24px;
+    padding: 17px;
+    background: rgba(212, 175, 55, 0.035);
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    border-radius: var(--radius-md);
+}
+
+.deanery-note-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    color: var(--gold);
+    background: rgba(212, 175, 55, 0.07);
+    border-radius: 10px;
+}
+
+.deanery-note strong {
+    color: var(--text-primary);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.deanery-note p {
+    margin-top: 3px;
+    color: var(--text-muted);
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+    .deanery-hero {
+        padding: 40px 0 25px;
+    }
+
+    .deanery-heading {
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .deanery-heading-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .deanery-content {
+        padding: 28px 0 80px;
+    }
+
+    .deanery-intro {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+    }
+
+    .deanery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .deanery-heading h1 {
+        font-size: 32px;
+    }
+
+    .deanery-heading p {
+        font-size: 12px;
+    }
+
+    .deanery-intro h2 {
+        font-size: 22px;
+    }
+
+    .deanery-card {
+        padding: 18px;
+    }
+
+    .deanery-contact {
+        grid-template-columns: 1fr;
+    }
+
+    .deanery-contact-item:last-child {
+        grid-column: auto;
+    }
+}

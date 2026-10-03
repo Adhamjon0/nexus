@@ -1,0 +1,325 @@
+.teachers-page {
+    min-height: 100vh;
+}
+
+.teachers-hero {
+    padding: 60px 0 35px;
+    border-bottom: 1px solid var(--border);
+}
+
+.teachers-heading {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.teachers-heading-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    flex-shrink: 0;
+    color: var(--gold);
+    background: rgba(212, 175, 55, 0.08);
+    border: 1px solid rgba(212, 175, 55, 0.14);
+    border-radius: 15px;
+}
+
+.teachers-heading .section-label {
+    margin-bottom: 7px;
+}
+
+.teachers-heading h1 {
+    color: var(--text-primary);
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 750;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+}
+
+.teachers-heading p {
+    margin-top: 8px;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.teachers-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 35px;
+}
+
+.teacher-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: min(100%, 520px);
+    min-height: 48px;
+    padding: 0 14px;
+    color: var(--text-muted);
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 13px;
+    transition:
+        border-color var(--transition),
+        background var(--transition);
+}
+
+.teacher-search:focus-within {
+    background: var(--bg-card-hover);
+    border-color: var(--border-gold);
+}
+
+.teacher-search input {
+    width: 100%;
+    color: var(--text-primary);
+    background: transparent;
+    font-size: 13px;
+}
+
+.teacher-search input::placeholder {
+    color: var(--text-muted);
+}
+
+.teachers-count {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    min-height: 48px;
+    padding: 0 15px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 13px;
+}
+
+.teachers-count strong {
+    color: var(--gold);
+    font-size: 18px;
+}
+
+.teachers-count span {
+    color: var(--text-muted);
+    font-size: 11px;
+}
+
+.teachers-content {
+    padding: 40px 0 90px;
+}
+
+.teachers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.teacher-card {
+    min-height: 330px;
+    padding: 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    transition:
+        background var(--transition),
+        border-color var(--transition),
+        transform var(--transition),
+        box-shadow var(--transition);
+}
+
+.teacher-card:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--border-gold);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-gold);
+}
+
+.teacher-card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.teacher-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    color: var(--gold);
+    background: rgba(212, 175, 55, 0.08);
+    border: 1px solid rgba(212, 175, 55, 0.14);
+    border-radius: 15px;
+}
+
+.teacher-status {
+    padding: 6px 9px;
+    color: var(--gold);
+    background: rgba(212, 175, 55, 0.05);
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    border-radius: 8px;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.teacher-info {
+    margin-top: 27px;
+}
+
+.teacher-label {
+    color: var(--text-muted);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.teacher-info h2 {
+    margin-top: 5px;
+    color: var(--text-primary);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.teacher-subject {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 10px;
+    color: var(--gold);
+    font-size: 12px;
+}
+
+.teacher-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 25px;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+}
+
+.teacher-details div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.teacher-details span {
+    color: var(--text-muted);
+    font-size: 9px;
+}
+
+.teacher-details strong {
+    color: var(--text-secondary);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.teacher-phone {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 20px;
+    color: var(--text-secondary);
+    font-size: 11px;
+}
+
+.teacher-phone svg {
+    color: var(--gold);
+}
+
+.teachers-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 250px;
+    color: var(--text-muted);
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+}
+
+.teachers-empty svg {
+    color: var(--gold);
+}
+
+.teachers-empty p {
+    font-size: 13px;
+}
+
+@media (max-width: 950px) {
+    .teachers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .teachers-hero {
+        padding: 40px 0 25px;
+    }
+
+    .teachers-heading {
+        align-items: flex-start;
+    }
+
+    .teachers-heading-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .teachers-toolbar {
+        margin-top: 28px;
+    }
+
+    .teachers-content {
+        padding: 28px 0 80px;
+    }
+
+    .teachers-grid {
+        gap: 10px;
+    }
+
+    .teacher-card {
+        min-height: 310px;
+        padding: 16px;
+    }
+}
+
+@media (max-width: 560px) {
+    .teachers-heading {
+        gap: 12px;
+    }
+
+    .teachers-heading h1 {
+        font-size: 32px;
+    }
+
+    .teachers-heading p {
+        font-size: 12px;
+    }
+
+    .teachers-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .teacher-search {
+        width: 100%;
+    }
+
+    .teachers-count {
+        width: fit-content;
+    }
+
+    .teachers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .teacher-card {
+        min-height: auto;
+    }
+}
