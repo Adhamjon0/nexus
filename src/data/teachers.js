@@ -2,10 +2,10 @@ export const teachers = [
     {
         id: 1,
         name: "Muhabbat Yusupovna",
-        subject: "Amaloy gramatika Va Leksika",
+        subject: "Amaliy gramatika Va Leksika",
         position: "O'qituvchi",
         department: "Fransuz tili Kafedrasi",
-        phone: "+998 90 100 00 01",
+        phone: "+998 91 544 78 45",
     },
     {
         id: 2,

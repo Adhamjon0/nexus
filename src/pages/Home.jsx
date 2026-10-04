@@ -109,7 +109,7 @@ function Home() {
                                     Talabalar
                                 </span>
 
-                                <strong>—</strong>
+                                <strong>18</strong>
                             </div>
                         </div>
 
@@ -123,7 +123,7 @@ function Home() {
                                     O‘qituvchilar
                                 </span>
 
-                                <strong>—</strong>
+                                <strong>9</strong>
                             </div>
                         </div>
 

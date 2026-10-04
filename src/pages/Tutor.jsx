@@ -210,7 +210,7 @@ function Tutor() {
                                 </a>
 
                                 <a
-                                    href={`mailto:${tutor.email}`}
+                                    href={`sms:${tutor.phone.replace(/\s/g, "")}`}
                                     className="tutor-action secondary"
                                 >
                                     <MessageCircle size={18} />

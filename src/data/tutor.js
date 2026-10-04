@@ -4,5 +4,5 @@ export const tutor = {
     department: "Talabalar bilan ishlash bo‘limi",
     phone: "+998 94 180 97 93",
     room: "Tyutorlar Xonasi",
-    students: 100 + "",
+    students: 100  + " +",
 };
