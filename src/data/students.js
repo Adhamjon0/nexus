@@ -6,6 +6,7 @@ export const students = [
         phone: "+998 91 707 72 91",
         position: "Guruh sardori",
         image: null,
+        birthDate: "2008-10-18",
     },
     {
         id: 2,
@@ -14,6 +15,7 @@ export const students = [
         phone: "+998 91 700 57 59",
         position: "Guruh a'zosi",
         image: null,
+        birthDate: "2008-11-01 ",
     },
     {
         id: 3,
@@ -22,6 +24,7 @@ export const students = [
         phone: "+998 91 701 84 85",
         position: "Sport ishlari bo'yicha mas'ul",
         image: null,
+        birthDate: "2008-03-23",
     },
     {
         id: 4,
@@ -30,6 +33,7 @@ export const students = [
         phone: "+998 88 771 00 35",
         position: "Guruh a'zosi",  
         image: null,
+        birthDate: "2009-03-11",
     },
     {
         id: 5,
@@ -38,6 +42,7 @@ export const students = [
         phone: "+998 50 505 21 08",
         position: "Media ishlari bo'yicha mas'ul",
         image: null,
+        birthDate: "2008-12-21",
     },
     {
         id: 6,
@@ -46,6 +51,7 @@ export const students = [
         phone: "+998 50 797 90 44",
         position: "Yoshlar ishlari bo'yicha mas'ul",
         image: null,
+        birthDate: "2008-05-29",
     },
     {
         id: 7,
@@ -54,6 +60,7 @@ export const students = [
         phone: "+998 87 295 09 59",
         position: "Guruh a'zosi",
         image: null,
+        birthDate: "2009-08-16",
     },
     {
         id: 8,
@@ -62,6 +69,7 @@ export const students = [
         phone: "+998 88 384 12 05",
         position: "Media ishlari bo'yicha mas'ul",
         image: null,
+        birthDate: "2008-05-12",
     },
     
     {
@@ -71,6 +79,7 @@ export const students = [
         phone: "+998 91 708 71 07",
         position: "Tadbirlar tashkiloti bo'yicha mas'ul",
         image: null,
+        birthDate: "2007-09-26",
     },
     {
         id: 10,
@@ -79,6 +88,7 @@ export const students = [
         phone: "+998 70 232 21 30",
         position: "Guruh a'zosi",
         image: null,
+        birthDate: "2008-05-21",
     },
     {
         id: 11,
@@ -87,6 +97,7 @@ export const students = [
         phone: "+998 50 780 09 72",
         position: "Media ishlari bo'yicha mas'ul",
         image: null,
+        birthDate: "2008-02-27",
     },
     {
         id: 12,
@@ -95,6 +106,7 @@ export const students = [
         phone: "+998 87 684 62 22",
         position: "Guruh a'zosi",
         image: null,
+        birthDate: "2008-12-26",
     },
     {
         id: 13,
@@ -103,6 +115,7 @@ export const students = [
         phone: "+998 91 519 11 03",
         position: "Guruh a'zosi",
         image: null,
+        birthDate: "2009-03-11",
     },
     {
         id: 14,
@@ -111,6 +124,7 @@ export const students = [
         phone: "+998 95 166 09 55",
         position: "Guruh a'zosi",
         image: null,
+        birthDate: "2008-09-14",
     },
     {
         id: 15,
@@ -119,6 +133,7 @@ export const students = [
         phone: "+998 88 912 11 27 ",
         position: "Talim ishlari bo'yicha mas'ul",
         image: null,
+        birthDate: "2008-03-27",
     },
     {
         id: 16,
@@ -127,6 +142,7 @@ export const students = [
         phone: "+998 87 075 77 30",
         position: "Guruh a'zosi",
         image: null,
+        birthDate: "2008-08-05",
     },
     {
         id: 17,
@@ -135,6 +151,7 @@ export const students = [
         phone: "+998 91 038 79 06",
         position: "Tadbirlar tashkiloti bo'yicha mas'ul",
         image: null,
+        birthDate: "2009-01-07",
     },
     {
         id: 18,
@@ -143,6 +160,7 @@ export const students = [
         phone: "+998 97 202 08 05",
         position: "Guruh a'zosi",
         image: null,
+        birthDate: "2008-02-16",
     }
 
 

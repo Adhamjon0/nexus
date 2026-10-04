@@ -9,6 +9,7 @@ import {
     HeartHandshake,
     ShieldCheck,
     Menu,
+    Cake
 } from "lucide-react";
 
 import MobileMenu from "./MobileMenu";
@@ -45,6 +46,11 @@ const navItems = [
         path: "/deanery",
         icon: Building2,
     },
+    {
+        label: "Tug'ilgan kunlar",
+        path: "/birthdays",
+        icon: Cake,
+    }
 ];
 
 function Header() {

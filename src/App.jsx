@@ -14,6 +14,7 @@ import Deanery from "./pages/Deanery";
 import SocialActivity from "./pages/SocialActivity";
 import StudentLogin from "./pages/StudentLogin";
 import PrivateStudents from "./pages/PrivateStudents";
+import Birthdays from "./pages/Birthdays";
 
 function App() {
   const [showIntro, setShowIntro] = useState(true);
@@ -33,8 +34,12 @@ function App() {
       <ScrollToTop />
 
       <Routes>
-
         <Route element={<Layout />}>
+          <Route
+            path="/"
+            element={<Home />}
+          />
+
           <Route
             path="/home"
             element={<Home />}
@@ -65,16 +70,22 @@ function App() {
             element={<SocialActivity />}
           />
 
-          {/* Asosiy sahifa */}
+          <Route
+            path="/birthdays"
+            element={<Birthdays />}
+          />
+
           <Route
             path="*"
             element={<Home />}
           />
         </Route>
+
         <Route
           path="/student-login"
           element={<StudentLogin />}
         />
+
         <Route
           path="/private-students"
           element={<PrivateStudents />}
