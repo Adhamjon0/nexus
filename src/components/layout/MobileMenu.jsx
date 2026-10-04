@@ -9,6 +9,7 @@ import {
     Building2,
     ShieldCheck,
     HeartHandshake,
+    Calendar
 } from "lucide-react";
 
 import "../../styles/mobile-menu.css";
@@ -44,6 +45,11 @@ const navItems = [
         path: "/deanery",
         icon: Building2,
     },
+    {
+        label: "Tug'ilgan kunlar",
+        path: "/birthdays",
+        icon: Calendar,
+    }
 ];
 
 function MobileMenu({ isOpen, onClose }) {
