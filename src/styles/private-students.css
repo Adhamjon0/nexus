@@ -1,0 +1,434 @@
+.private-page {
+    min-height: 100vh;
+    min-height: 100svh;
+
+    background:
+        radial-gradient(circle at 50% 0%,
+            rgba(212, 175, 55, 0.055),
+            transparent 32%),
+        #080808;
+
+    color: #f1f1f1;
+
+    padding: 45px 20px 60px;
+
+    position: relative;
+    overflow-x: hidden;
+}
+
+.private-bg-glow {
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    top: -300px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: rgba(212, 175, 55, 0.035);
+
+    filter: blur(100px);
+
+    pointer-events: none;
+}
+
+.private-container {
+    width: 100%;
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    position: relative;
+    z-index: 2;
+}
+
+.private-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-bottom: 30px;
+}
+
+.private-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    margin-bottom: 20px;
+
+    padding: 0;
+
+    border: 0;
+    background: transparent;
+
+    color: #777;
+
+    font-family: inherit;
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition: color 0.2s ease;
+}
+
+.private-back:hover {
+    color: #d4af37;
+}
+
+.private-title-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.private-title-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 14px;
+
+    color: #d4af37;
+
+    background: rgba(212, 175, 55, 0.055);
+
+    border: 1px solid rgba(212, 175, 55, 0.16);
+}
+
+.private-eyebrow {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #d4af37;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 0.17em;
+}
+
+.private-title-row h1 {
+    margin: 0;
+
+    color: #f4f4f4;
+
+    font-size: clamp(24px, 3vw, 34px);
+
+    line-height: 1.15;
+
+    letter-spacing: -0.035em;
+}
+
+.private-logout {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    height: 42px;
+
+    padding: 0 16px;
+
+    border: 1px solid #292929;
+
+    border-radius: 10px;
+
+    background: #101010;
+
+    color: #999;
+
+    font-family: inherit;
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+.private-logout:hover {
+    color: #d4af37;
+
+    border-color: rgba(212, 175, 55, 0.3);
+
+    background: #131313;
+}
+
+.private-info-card {
+    display: grid;
+
+    grid-template-columns: auto 1fr auto;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 22px 24px;
+
+    margin-bottom: 20px;
+
+    background: #101010;
+
+    border: 1px solid #232323;
+
+    border-radius: 16px;
+}
+
+.private-info-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    color: #d4af37;
+
+    background: rgba(212, 175, 55, 0.05);
+
+    border: 1px solid rgba(212, 175, 55, 0.12);
+}
+
+.private-info-card h2 {
+    margin: 0 0 5px;
+
+    color: #e5e5e5;
+
+    font-size: 15px;
+}
+
+.private-info-card p {
+    max-width: 650px;
+
+    margin: 0;
+
+    color: #6e6e6e;
+
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.private-file-meta {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 5px;
+}
+
+.private-file-meta span {
+    color: #555;
+
+    font-size: 8px;
+    font-weight: 700;
+
+    letter-spacing: 0.12em;
+}
+
+.private-file-meta strong {
+    color: #aaa;
+
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.pdf-section {
+    overflow: hidden;
+
+    background: #101010;
+
+    border: 1px solid #232323;
+
+    border-radius: 16px;
+}
+
+.pdf-toolbar {
+    min-height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 10px 15px 10px 20px;
+
+    border-bottom: 1px solid #222;
+
+    background: #111;
+}
+
+.pdf-toolbar-title {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: #aaa;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.pdf-toolbar-title svg {
+    color: #d4af37;
+}
+
+.pdf-download {
+    height: 38px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 0 13px;
+
+    border-radius: 9px;
+
+    background: #d4af37;
+
+    color: #080808;
+
+    text-decoration: none;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.pdf-download:hover {
+    background: #e2bf4c;
+
+    transform: translateY(-1px);
+}
+
+.pdf-viewer {
+    width: 100%;
+
+    height: 720px;
+
+    background: #181818;
+}
+
+.pdf-viewer iframe {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+}
+
+.private-security-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    margin-top: 18px;
+
+    color: #4d4d4d;
+
+    font-size: 10px;
+}
+
+.private-security-note svg {
+    color: #806a2a;
+}
+
+@media (max-width: 800px) {
+    .private-page {
+        padding: 30px 15px 45px;
+    }
+
+    .private-header {
+        align-items: flex-start;
+    }
+
+    .private-info-card {
+        grid-template-columns: auto 1fr;
+    }
+
+    .private-file-meta {
+        grid-column: 2;
+
+        align-items: flex-start;
+    }
+
+    .pdf-viewer {
+        height: 620px;
+    }
+}
+
+@media (max-width: 560px) {
+    .private-header {
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+    .private-logout {
+        width: 100%;
+    }
+
+    .private-title-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .private-title-row {
+        gap: 12px;
+    }
+
+    .private-title-row h1 {
+        font-size: 23px;
+    }
+
+    .private-info-card {
+        grid-template-columns: 1fr;
+
+        padding: 20px;
+    }
+
+    .private-file-meta {
+        grid-column: auto;
+    }
+
+    .pdf-toolbar {
+        padding: 10px 12px;
+    }
+
+    .pdf-toolbar-title span {
+        display: none;
+    }
+
+    .pdf-download {
+        width: 100%;
+    }
+
+    .pdf-viewer {
+        height: 600px;
+    }
+}

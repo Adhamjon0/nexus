@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import {
-    GraduationCap,
     Home,
     Users,
     UserRound,
+    GraduationCap,
     Building2,
+    HeartHandshake,
     ShieldCheck,
     Menu,
-    HeartHandshake,
 } from "lucide-react";
 
 import MobileMenu from "./MobileMenu";
@@ -54,13 +54,19 @@ function Header() {
         <>
             <header className="header">
                 <div className="container header-inner">
+
                     <Link
                         to="/"
                         className="logo"
                         onClick={() => setIsMenuOpen(false)}
                     >
-                        <span className="logo-mark">N</span>
-                        <span className="logo-text">NEXUS</span>
+                        <span className="logo-mark">
+                            N
+                        </span>
+
+                        <span className="logo-text">
+                            NEXUS
+                        </span>
                     </Link>
 
                     <nav className="desktop-nav">
@@ -72,17 +78,26 @@ function Header() {
                                     key={item.path}
                                     to={item.path}
                                     className={({ isActive }) =>
-                                        `nav-link ${isActive ? "active" : ""}`
+                                        `nav-link ${isActive ? "active" : ""
+                                        }`
                                     }
                                 >
-                                    <Icon size={17} strokeWidth={1.8} />
-                                    <span>{item.label}</span>
+                                    <Icon
+                                        size={17}
+                                        strokeWidth={1.8}
+                                    />
+
+                                    <span>
+                                        {item.label}
+                                    </span>
                                 </NavLink>
                             );
                         })}
                     </nav>
 
                     <div className="header-actions">
+
+                        {/* MAXFIY BO‘LIM */}
                         <Link
                             to="/student-login"
                             className="private-button"
@@ -91,21 +106,26 @@ function Header() {
                                 size={17}
                                 strokeWidth={1.8}
                             />
-                            <span>Talabalar ma’lumotlari</span>
+
+                            <span>
+                                Talabalar ma’lumotlari
+                            </span>
                         </Link>
 
                         <button
                             type="button"
                             className="mobile-menu-button"
-                            onClick={() => setIsMenuOpen(true)}
+                            onClick={() =>
+                                setIsMenuOpen(true)
+                            }
                             aria-label="Menyuni ochish"
-                            aria-expanded={isMenuOpen}
                         >
                             <Menu
                                 size={23}
                                 strokeWidth={1.8}
                             />
                         </button>
+
                     </div>
                 </div>
             </header>
